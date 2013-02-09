@@ -46,6 +46,7 @@ Inspiration
 
 ## Colour palletes
 
+- http://0to255.com/e71636
 - http://fontfabric.com/wp-content/themes/unstandard/images/Behance_RBNo2_06.jpg
 - http://fontfabric.com/wp-content/themes/unstandard/images/Behance_RBNo2_07.jpg
 - http://www.behance.net/gallery/Typometry-Free-Font/3831957
