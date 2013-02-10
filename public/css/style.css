@@ -338,9 +338,10 @@ iframe {
 
 /* change lang */
 .change-lang {
-  font-family: "QuicksandBold", Arial, sans-serif;
+  font-family: "QuicksandBook", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
+  font-weight: bold;
   max-width: 960px;
   width: 38px;
   height: 62px;

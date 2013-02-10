@@ -280,12 +280,8 @@ td {
    App Styles
    ========================================================================== */
 
-//@import "fonts/quicksand/../css/fonts/quicksand/_style";
-
-
-
-
 @import "../fonts/quicksand/stylesheet.css";
+
 
 
 
@@ -304,20 +300,8 @@ $fontQuicksandBook: 'QuicksandBook', $fontBase;
 $fontQuicksandBold: 'QuicksandBold', $fontBase;
 $fontQuicksandDash: 'QuicksandDash', $fontBase;
 
-@mixin mfontQuicksandLight {
-    font-family: $fontQuicksandLight;
-    font-weight: normal;
-    font-style: normal;
-}
-
 @mixin mfontQuicksandBook {
     font-family: $fontQuicksandBook;
-    font-weight: normal;
-    font-style: normal;
-}
-
-@mixin mfontQuicksandBold {
-    font-family: $fontQuicksandBold;
     font-weight: normal;
     font-style: normal;
 }
@@ -418,7 +402,8 @@ iframe {
 /* change lang */
 
 .change-lang {
-    @include mfontQuicksandBold;
+    @include mfontQuicksandBook;
+    font-weight: bold;
     @include l-960;
     width: 38px;
     height: 62px;
