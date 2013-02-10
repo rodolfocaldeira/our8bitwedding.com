@@ -41,7 +41,11 @@ module.exports = function (grunt) {
                 eqnull : true,
                 browser : true
             },
-            globals : {}
+            globals : {
+                log : false,
+                console : false,
+                google : true
+            }
         },
 
         lint : {
@@ -49,8 +53,8 @@ module.exports = function (grunt) {
         },
 
         watch : {
-            files : ['public/sass/main.scss', '<config:lint.files>'],
-            tasks : ['compass', 'lint']
+            files : ['public/sass/style.scss', '<config:lint.files>'],
+            tasks : ['compass:dev', 'lint']
         },
 
         copy : {

@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBfe_Aw0z3rSxMRATO8-pNOn8a8awLiNyM&sensor=false"></script>
+
 </head>
 <body>
   <!--[if lt IE 8]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -24,7 +26,7 @@
       </div>
 
       <div class="game">
-          <!--PLACEHOLDER -->
+        <img src="img/game-placeholder.png">
       </div>
 
       <div class="intro">
@@ -32,75 +34,71 @@
           <p>JÁ SABEM DA NOVIDADE?</p>
           <p>VAMOS DAR O NÓ!!!</p>
 
-          <iframe src="http://player.vimeo.com/video/40895695" width="700" height="393" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+        <iframe width="700" height="350" src="http://www.youtube.com/embed/eKlT0KVpPDk?showinfo=0&controls=2&autohide=1" frameborder="0" allowfullscreen></iframe>
       </div>
 
-      <div class="location">
-          <hr>
+    <div class="location">
+      <hr>
 
 
-          <div class="map-and-details">
-              <div id="map"></div>
+      <div class="map-and-details">
+        <h1>Onde & Quando?</h1>
+        <div id="map"></div>
 
-              <div class="details">
-                  <p class="venue">INATEL</p>
-                  <p class="city">COSTA <br>DA CAPARICA</p>
-                  <p class="hours">14:00</p>
-                  <p class="date">21.06.2013</p>
-              </div>
-          </div>
-
-          <h1>Onde & Quando?</h1>
-          <hr>
+        <div class="details">
+          <p class="venue">QUINTA DA TAIPA</p>
+          <p class="city">ALENQUER</p>
+          <p class="hours">16:00</p>
+          <p class="date">21.06.2013</p>
+        </div>
       </div>
+      <hr>
+    </div>
 
 
       <div class="rsvp">
-          <h1>ATÉ QUANDO E ONDE <br>POSSO CONFIRMAR?</h1>
+          <h1>ATÉ QUANDO E ONDE<br>POSSO CONFIRMAR?</h1>
 
           <div class="rsvp-wrapper">
               <img src="img/icon-mail.png" >
-
               <div class="date-and-cta">
                   <p class="date">15.04.2013</p>
                   <a class="cta" href="/confirmar">CONFIRMAR</a>
               </div>
           </div>
-
-
       </div>
 
       <div class="contacts">
+        <div class="contacts-wrapper">
           <img src="img/icon-si-a.png" alt="">
           <h1>Se tens alguma dúvida entra em contacto connosco</h1>
           <ul>
-              <li class="is-bride">
-                  <p>Marlene</p>
-                  <p class="phone">91 430 62 76</p>
-              </li>
-              <li class="is-groom">
-                  <p>Rodolfo</p>
-                  <p class="phone">91 402 78 66</p>
-              </li>
+            <li class="is-bride">
+              <p>Marlene</p>
+              <p class="phone">91 430 62 76</p>
+            </li>
+            <li class="is-groom">
+              <p>Rodolfo</p>
+              <p class="phone">91 402 78 66</p>
+            </li>
           </ul>
           <h2>Ou vê a nossa <a href="#faq">FAQ</a></h2>
+        </div>
       </div>
 
-      <div class="faq">
-          <h1>FAQ</h1>
 
+      <div class="faq">
+          <h1 id="faq">FAQ</h1>
           <dl>
               <dt>01. ALOJAMENTO?</dt>
               <dd>O teu alojamento é muito importante para nós obrigado. Lorem mais texto aqui que é um bocado giro.</dd>
 
-              <dt>02. TPC</dt>
+              <dt>02. Quinta da Taipa</dt>
               <dd>You need to do the following</dd>
 
-              <dt>03. Baby Sitter</dt>
+              <dt>03. Prendas</dt>
               <dd>You have kid, good !!!!</dd>
-
           </dl>
-
       </div>
 
       <hr class="is-inverted">
