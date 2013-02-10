@@ -353,6 +353,10 @@ a {
     &:focus {
         color: $colorGray;
     }
+
+    &:visited {
+        color: $colorWhite;
+    }
 }
 
 hr {
@@ -396,7 +400,12 @@ iframe {
 /* Modules
    ========================================================================== */
 
-
+.cta {
+    display: inline-block;
+    padding: 0.3em 0.3em 0.1em;
+    background-color: #f64557;
+    font-size: 2.3em;
+}
 
 /* container */
 
@@ -694,6 +703,10 @@ iframe {
     dd {
         margin: 0.5em 0 0.5em;
     }
+
+    .cta {
+        margin-top: 10%;
+    }
 }
 
 
@@ -730,47 +743,14 @@ iframe {
 
         iframe {
             margin-top: 3em;
-            //height: auto;
-            //min-height: 250px;
             width: 85%;
         }
     }
 
-
-    //.location {
-    //
-    //    h1 {
-    //        font-size: 2em;
-    //        text-align: center;
-    //    }
-    //
-    //    .map-and-details {
-    //        padding-left: 5%;
-    //        padding-right: 5%;
-    //
-    //        #map {
-    //            float: none;
-    //            width: 90%;
-    //            margin: 0 auto;
-    //            height: 200px;
-    //        }
-    //        .details {
-    //            float: none;
-    //            margin: 0 auto;
-    //            text-align: center;
-    //            width: 100%;
-    //
-    //            p {
-    //                font-size: 2em;
-    //            }
-    //        }
-    //    }
-    //}
-
     .location {
 
         h1 {
-            font-size: 2em;
+            font-size: 2.5em;
         }
 
         .location-details {
@@ -788,17 +768,14 @@ iframe {
                     @include mfontQuicksandBook;
                 }
 
-                .venue-row1 {
-                    font-size: 2em;
-                }
-
-                .venue-row2 {
-                    font-size: 2em;
+                .venue-row1,
+                .venue-row2,
+                .city {
+                    font-size: 2.5em;
                 }
 
                 .city {
                     @include mfontQuicksandDash;
-                    font-size: 2em;
                 }
             }
 
@@ -806,13 +783,11 @@ iframe {
                 //float: right;
                 margin-top: 2%;
 
-                .date {
-                    font-size: 2em;
+                .date,
+                .hours {
+                    font-size: 2.5em;
                 }
 
-                .hours {
-                    font-size: 2em;
-                }
             }
         }
 
