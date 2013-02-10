@@ -291,11 +291,11 @@ a {
   text-decoration: none;
   color: white;
 }
-a:hover, a:focus {
-  color: #292929;
-}
 a:visited {
   color: white;
+}
+a:hover, a:focus {
+  color: #292929;
 }
 
 hr {
