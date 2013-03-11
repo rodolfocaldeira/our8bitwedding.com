@@ -276,11 +276,16 @@ td {
 
 
 
+
 /* ==========================================================================
    App Styles
    ========================================================================== */
 
-@import "../fonts/quicksand/stylesheet.css";
+@import "../fonts/quicksand/_style";
+@import "     ../fonts/pixel-invaders/_style";
+
+
+
 
 
 
@@ -293,12 +298,14 @@ $colorBlack: #000;
 $colorWhite: #fff;
 $colorGray: #292929;
 $colorRed: #f64557;
+$colorBlue: #2a8fbd;
 
 $fontBase: Arial, sans-serif;
 $fontQuicksandLight: 'QuicksandLight', $fontBase;
 $fontQuicksandBook: 'QuicksandBook', $fontBase;
 $fontQuicksandBold: 'QuicksandBold', $fontBase;
 $fontQuicksandDash: 'QuicksandDash', $fontBase;
+$fontFamilyPixelInvaders: 'pixel_invadersregular';
 
 @mixin mfontQuicksandBook {
     font-family: $fontQuicksandBook;
@@ -311,6 +318,14 @@ $fontQuicksandDash: 'QuicksandDash', $fontBase;
     font-weight: normal;
     font-style: normal;
 }
+
+@mixin fontPixelInvaders {
+    font-family: $fontFamilyPixelInvaders;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 
 
 
@@ -366,6 +381,8 @@ img {
 iframe {
     width: 100%;
 }
+
+
 
 
 
@@ -475,6 +492,13 @@ iframe {
         font-size: 4.5em;
     }
 
+    .invader {
+        color: $colorBlue;
+        text-align: center;
+        margin-left: 10%;
+    }
+
+
     .location-details {
         @extend .clearfix;
         margin: 10% auto;
@@ -507,7 +531,11 @@ iframe {
 
         .location-details-col2 {
             float: right;
-            margin-top: 2%;
+
+            .weekday {
+                font-size: 2.5em;
+                @include mfontQuicksandDash;
+            }
 
             .date {
                 font-size: 3.3em;
@@ -594,11 +622,6 @@ iframe {
     .contacts-wrapper {
         @include l-960;
         margin: 0 auto;
-    }
-
-    img {
-        margin-bottom: 3em;
-        width: 25%;
     }
 
     h1 {
@@ -710,12 +733,25 @@ iframe {
         font-size: 4em;
     }
 
+    p {
+        font-size: 30em;
+        margin: 0;
+        line-height: 0.5em;
+        margin-left: 5%;
+    }
+
     img {
         max-width: 200px;
     }
 }
 
-
+.invader {
+    @include fontPixelInvaders;
+    font-size: 25em;
+    margin: 0;
+    line-height: 0.5em;
+    margin-left: 5%;
+}
 
 
 
@@ -768,6 +804,7 @@ iframe {
                 //float: right;
                 margin-top: 2%;
 
+                .weekday,
                 .date,
                 .hours {
                     font-size: 2.5em;

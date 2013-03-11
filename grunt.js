@@ -53,7 +53,7 @@ module.exports = function (grunt) {
         },
 
         watch : {
-            files : ['public/sass/style.scss', '<config:lint.files>'],
+            files : ['public/sass/main.scss', '<config:lint.files>'],
             tasks : ['compass:dev', 'lint']
         },
 
