@@ -479,6 +479,19 @@ iframe {
   max-width: 190px;
 }
 
+.en .location .location-details .location-details-col2 .weekday {
+  font-size: 4em;
+  font-family: "QuicksandDash", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+.en .location .location-details .location-details-col2 .date {
+  font-size: 2.8em;
+}
+.en .location .location-details .location-details-col2 .hours {
+  font-size: 5.55em;
+}
+
 /* rsvp */
 .rsvp {
   max-width: 960px;
@@ -698,7 +711,7 @@ iframe {
     font-style: normal;
   }
   .location .location-details .location-details-col2 {
-    margin-top: 2%;
+    margin-top: 5%;
   }
   .location .location-details .location-details-col2 .weekday,
   .location .location-details .location-details-col2 .date,
@@ -709,6 +722,12 @@ iframe {
     display: block;
     margin: 0 auto;
     max-width: 190px;
+  }
+
+  .en .location .location-details .location-details-col2 .weekday,
+  .en .location .location-details .location-details-col2 .date,
+  .en .location .location-details .location-details-col2 .hours {
+    font-size: 2.8em;
   }
 
   .rsvp {
@@ -764,6 +783,10 @@ iframe {
   }
   .thank-you img {
     max-width: 170px;
+  }
+
+  .invader {
+    font-size: 20em !important;
   }
 }
 .ir {

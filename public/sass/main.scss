@@ -541,6 +541,7 @@ iframe {
                 @include mfontQuicksandDash;
             }
 
+
             .date {
                 font-size: 3.3em;
             }
@@ -558,6 +559,30 @@ iframe {
     }
 
 }
+
+.en {
+
+    .location .location-details .location-details-col2 {
+
+        .weekday {
+            font-size: 4em;
+            @include mfontQuicksandDash;
+        }
+
+
+        .date {
+            font-size: 2.8em;
+        }
+
+        .hours {
+            font-size: 5.55em;
+        }
+
+    }
+
+}
+
+
 
 
 
@@ -819,8 +844,6 @@ iframe {
             }
 
             .location-details-col1 {
-                //float: left;
-
                 .venue {
                     @include mfontQuicksandBook;
                 }
@@ -837,8 +860,7 @@ iframe {
             }
 
             .location-details-col2 {
-                //float: right;
-                margin-top: 2%;
+                margin-top: 5%;
 
                 .weekday,
                 .date,
@@ -855,6 +877,16 @@ iframe {
             max-width: 190px;
         }
 
+    }
+
+    .en {
+        .location .location-details .location-details-col2 {
+            .weekday,
+            .date,
+            .hours {
+                font-size: 2.8em;
+            }
+        }
     }
 
     .rsvp {
@@ -934,6 +966,10 @@ iframe {
         img {
             max-width: 170px;
         }
+    }
+
+    .invader {
+        font-size: 20em !important;
     }
 
 }
