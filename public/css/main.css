@@ -357,6 +357,7 @@ iframe {
 }
 .cta:hover {
   color: white;
+  background-color: #2a8fbd;
 }
 
 /* container */
@@ -527,7 +528,6 @@ iframe {
 .rsvp .rsvp-wrapper .date-and-cta .cta {
   display: inline-block;
   padding: 0.3em 0.3em 0.1em;
-  background-color: #f64557;
   font-size: 2.3em;
 }
 
